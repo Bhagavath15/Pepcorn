@@ -2,17 +2,17 @@ import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-// import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-// import LanguageIcon from '@mui/icons-material/Language';
-// import CreditCardIcon from '@mui/icons-material/CreditCard';
-// import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-// import Button from '@mui/material/Button';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import ChatIcon from '@mui/icons-material/Chat';
-// import IconButton from '@mui/material/IconButton';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import LanguageIcon from '@mui/icons-material/Language';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import Button from '@mui/material/Button';
+import MenuIcon from '@mui/icons-material/Menu';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import ChatIcon from '@mui/icons-material/Chat';
+import IconButton from '@mui/material/IconButton';
 
 export default function App() {
 
@@ -72,15 +72,15 @@ function Navbar() {
       </div>
       {window.screen.width <= 600 ? <div className="navbar-btn">
 
-        {/* <Button color="inherit" onClick={handleNavbarClick} endIcon={<MenuIcon />}>
-        </Button> */}
+        <Button color="inherit" onClick={handleNavbarClick} endIcon={<MenuIcon />}>
+        </Button>
 
         <div className="menu-content-div">
           <div className="menu-content">
 
             {isContentVisible && (
               <section className="menu-content-sec">
-                {/* <Button color="error" onClick={handleExitClick}>X</Button> */}
+                <Button color="error" onClick={handleExitClick}>X</Button>
                 <div className="navbar-button">
                   <a href="#">Startup</a>
                   <a href="#">Raise Funding</a>
@@ -118,7 +118,7 @@ function CosIqBody() {
     <div className='cosiq-body'>
       <div className='cosiq'>
         <div className="backbutton">
-          {/* <ArrowBackIosNewIcon fontSize="small" /> */}
+          <ArrowBackIosNewIcon fontSize="small" />
           <a href="#">Back</a>
         </div>
         <div className="cosiq-text">
@@ -153,11 +153,11 @@ function CosiqVideo() {
         <p className='subHeading'>Molecular skincare brand focussed on safe & visible results</p>
         <div className="cosiq-link">
           <div className="backbutton">
-            {/* <LanguageIcon fontSize="small" /> */}
+            <LanguageIcon fontSize="small" />
             <a href='https://mycosiq.com'>https://mycosiq.com</a>
           </div>
           <div className="backbutton">
-            {/* <CreditCardIcon fontSize="small" /> */}
+            <CreditCardIcon fontSize="small" />
             <p>AAGCI5003E</p>
           </div>
         </div>
@@ -211,7 +211,7 @@ function DeckInfo() {
           <div className='deck-content'>
             <h2 className='deck-title'>Deck Info</h2>
 
-            <a className='cosiq-pdf-button' href="https://api.pepcorns.com/clientassets/icon1677255746699.pdf" download>CosIq_pitch.pdf</a>
+            <a className='cosiq-pdf-button' href="https://api.pepcorns.com/clientassets/icon1677255746699.pdf" download>CosIq_pitch.pdf <CloudDownloadIcon fontSize="small" /></a>
           </div>
           <div>
             <SlideList />
@@ -224,7 +224,7 @@ function DeckInfo() {
             <h2 className='document-title'>Documents</h2>
             <div className="zip-container">
               <p>CosIQ.zip</p>
-              {/* <span><CloudDownloadIcon fontSize="small" /></span> */}
+              <span><CloudDownloadIcon fontSize="small" /></span>
             </div>
 
           </div>
@@ -375,7 +375,7 @@ function BottomNav() {
           <p>Enabling everyday people to invest
             in startups they believe in</p>
           <div className="bottom-icon">
-            {/* <IconButton aria-label="delete" fontSize="large" color="inherit">
+            <IconButton aria-label="delete" fontSize="large" color="inherit">
               <FacebookIcon />
             </IconButton>
             <IconButton aria-label="delete" color="inherit">
@@ -386,7 +386,7 @@ function BottomNav() {
             </IconButton>
             <IconButton aria-label="delete" color="inherit">
               <ChatIcon />
-            </IconButton> */}
+            </IconButton>
           </div>
         </div>
         <div className="investors">
