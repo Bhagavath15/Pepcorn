@@ -19,6 +19,11 @@
 
     }
 
+    .navbar .logo {
+        margin-left: 10px;
+
+    }
+
     .logo-cont {
         width: 35%
     }
